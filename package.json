@@ -1,0 +1,32 @@
+{
+    "name": "electron-project",
+    "version": "1.0.0",
+    "description": "",
+    "main": "app.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "nodemon --watch \"app.js\" --exec \"electron .\"",
+        "pack": "electron-builder --dir",
+        "dist": "electron-builder"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "electron": "^7.1.7",
+        "electron-builder": "^21.2.0",
+        "nodemon": "^2.0.2"
+    },
+    "build": {
+        "productName": "Daheng's Electron Demo",
+        "appId": "club.dahengzhang.client",
+        "copyright": "DahengZhang@Copyright2019",
+        "files": [
+            "app.js"
+        ]
+    },
+    "dependencies": {
+        "axios": "^0.19.0",
+        "unzip": "^0.1.11"
+    }
+}
