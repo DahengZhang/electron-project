@@ -1,6 +1,6 @@
 {
     "name": "electron-project",
-    "version": "1.0.0",
+    "version": "0.0.3",
     "description": "",
     "main": "app.js",
     "scripts": {
@@ -21,12 +21,20 @@
         "productName": "Daheng's Electron Demo",
         "appId": "club.dahengzhang.client",
         "copyright": "DahengZhang@Copyright2019",
+        "directories": {
+            "output": "build"
+        },
         "files": [
-            "app.js"
+            "app.js",
+            "dist.zip",
+            "config/**/*"
         ]
     },
     "dependencies": {
+        "adm-zip": "^0.4.13",
         "axios": "^0.19.0",
-        "unzip": "^0.1.11"
+        "koa": "^2.11.0",
+        "koa-static": "^5.0.0",
+        "moment": "^2.24.0"
     }
 }
